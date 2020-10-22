@@ -84,10 +84,12 @@ body {
     color: var(--secondary-text-color); 
 }
 .section-general {
+    max-width:1600px;
     text-align: center;
     background-color:#2F303A;
 }
 .title-white {
+    display: block;
     margin-top: 0;
     margin-bottom: 30;
     font-weight: 900;
@@ -115,6 +117,7 @@ body {
     width: 1200px;
 }
 .section-advantages {
+    max-width:1600px;
     padding-right: 200px;
     padding-bottom: 0;
     padding-left: 200px;
@@ -122,6 +125,9 @@ body {
 }
 .advantages  {
     display: flex;
+}
+.advantages .item {
+    min-width: 270px;
 }
 .advantages .item:not(:last-child) {
     margin-right: 30px;
@@ -149,7 +155,6 @@ body {
 .text-grey {
     margin-top: 10;
     margin-bottom: 0;
-    min-width: 270px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -164,6 +169,7 @@ body {
     letter-spacing: 0.03em;   
 }
 .footer-black {
+    max-width:1600px;
     padding-top: 60px;
     padding-left: 200px;
     padding-bottom: 60px;
@@ -223,9 +229,7 @@ body {
 } 
 /*Портфолио*/
 .button-primary {
-    margin-bottom: 50px;
-    width: 200px;
-    padding: 10px 32px;
+    padding: 6px 22px;
     border-radius: 4px;
     font-weight:500;
     font-size: 16px;
@@ -241,7 +245,7 @@ body {
 }
 .title-service {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 50px;
     font-weight:700;
     font-size: 36px;
     line-height: 1.16;
@@ -250,7 +254,7 @@ body {
     color: var(--title-text-color);
     }
 .title-primary {
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 4px;
     font-weight:700;
     font-size: 18px;
@@ -260,6 +264,7 @@ body {
 }
 .text-service {
     margin-top: 0;
+    margin-bottom: 20px;
     font-weight:400;
     font-size: 18px;
     line-height: 1.88;
@@ -267,17 +272,34 @@ body {
     color: var(--secondary-text-color);   
 }
 .section {
+    max-width:1600px;
     padding-top: 94px;
     padding-right: 200px;
     padding-bottom: 94px;
     padding-left: 200px;
   }
 .service {
-    display: flex;
-}
+    display:flex;
+    margin-bottom: 50px;
+    justify-content: center;
+   }
 .service .item {
     margin-right: 8px;
 }
 .service .item:last-child {
     margin-right: 0;
+}
+.service-examples {
+    display:flex;
+    flex-wrap: wrap;
+}
+.service-examples .item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+.service-examples .item:nth-child(3n) {
+    margin-right: 0;
+}
+.service-examples .item:nth-last-child(-n+3) {
+    margin-bottom: 0px;
 }
