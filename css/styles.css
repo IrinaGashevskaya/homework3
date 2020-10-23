@@ -23,8 +23,6 @@ body {
 .main-nav {
     display: flex;
     align-items: center;
-    margin-left: 200px;
-    margin-right: 200px;
     }
 .logo {
     font-family:'Raleway', sans-serif;
@@ -84,9 +82,17 @@ body {
     color: var(--secondary-text-color); 
 }
 .section-general {
-    max-width:1600px;
+    height: 600px;
     text-align: center;
     background-color:#2F303A;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.hero {    
+    max-width: 696px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .title-white {
     display: block;
@@ -115,14 +121,19 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
-.section-advantages {
-    max-width:1600px;
-    padding-right: 200px;
-    padding-bottom: 0;
-    padding-left: 200px;
-    margin-bottom: 0;
-}
+.visually-hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+  }
 .advantages  {
     display: flex;
 }
@@ -131,6 +142,10 @@ body {
 }
 .advantages .item:not(:last-child) {
     margin-right: 30px;
+}
+.section-work {
+    padding-top: 0;
+    padding-bottom: 94px;
 }
 .example {
     display: flex;
@@ -169,11 +184,8 @@ body {
     letter-spacing: 0.03em;   
 }
 .footer-black {
-    max-width:1600px;
     padding-top: 60px;
-    padding-left: 200px;
     padding-bottom: 60px;
-    padding-right: 200px;
     background-color:#2F303A;
 }
 .address {
@@ -272,12 +284,9 @@ body {
     color: var(--secondary-text-color);   
 }
 .section {
-    max-width:1600px;
     padding-top: 94px;
-    padding-right: 200px;
     padding-bottom: 94px;
-    padding-left: 200px;
-  }
+    }
 .service {
     display:flex;
     margin-bottom: 50px;
